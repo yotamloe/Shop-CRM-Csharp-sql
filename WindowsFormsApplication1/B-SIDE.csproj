@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{647BA1A8-46C2-409D-923B-39032BBCE62C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bside.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Conect_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conect_Form.Designer.cs">
+      <DependentUpon>Conect_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Email_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Email_Form.Designer.cs">
+      <DependentUpon>Email_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lend_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Lend_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lendings_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lendings_Form.Designer.cs">
+      <DependentUpon>Lendings_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mach_Record_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mach_Record_Form.Designer.cs">
+      <DependentUpon>Mach_Record_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_Form_worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN_Form_worker.Designer.cs">
+      <DependentUpon>MAIN_Form_worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recieve_new_Inventiry_Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recieve_new_Inventiry_Form1.Designer.cs">
+      <DependentUpon>Recieve_new_Inventiry_Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recieve_new_Inventiry_Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recieve_new_Inventiry_Form2.Designer.cs">
+      <DependentUpon>Recieve_new_Inventiry_Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recieve_new_inventiry_form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recieve_new_inventiry_form3.Designer.cs">
+      <DependentUpon>Recieve_new_inventiry_form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReciveInventory_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReciveInventory_form.Designer.cs">
+      <DependentUpon>ReciveInventory_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recive_second_hand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recive_second_hand.Designer.cs">
+      <DependentUpon>recive_second_hand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewLending_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLending_Form.Designer.cs">
+      <DependentUpon>NewLending_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN_Form.Designer.cs">
+      <DependentUpon>MAIN_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Record_in_sale.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="EmplyeeStatus.cs" />
+    <Compile Include="Lending.cs" />
+    <Compile Include="LendingStatus.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="PaymentMethod.cs" />
+    <Compile Include="Record_in_lending.cs" />
+    <Compile Include="Record.cs" />
+    <Compile Include="Record_in_order.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Returning.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="Sale_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale_Form.Designer.cs">
+      <DependentUpon>Sale_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchLending_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchLending_Form.Designer.cs">
+      <DependentUpon>SearchLending_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="Vendor.cs" />
+    <Compile Include="Genere.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Conect_Form.resx">
+      <DependentUpon>Conect_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Email_Form.resx">
+      <DependentUpon>Email_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lendings_Form.resx">
+      <DependentUpon>Lendings_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lend_Form.resx">
+      <DependentUpon>Lend_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLending_Form.resx">
+      <DependentUpon>NewLending_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mach_Record_Form.resx">
+      <DependentUpon>Mach_Record_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN_Form.resx">
+      <DependentUpon>MAIN_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN_Form_worker.resx">
+      <DependentUpon>MAIN_Form_worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recieve_new_Inventiry_Form1.resx">
+      <DependentUpon>Recieve_new_Inventiry_Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recieve_new_Inventiry_Form2.resx">
+      <DependentUpon>Recieve_new_Inventiry_Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recieve_new_inventiry_form3.resx">
+      <DependentUpon>Recieve_new_inventiry_form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReciveInventory_form.resx">
+      <DependentUpon>ReciveInventory_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recive_second_hand.resx">
+      <DependentUpon>recive_second_hand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale_Form.resx">
+      <DependentUpon>Sale_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchLending_Form.resx">
+      <DependentUpon>SearchLending_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="email1.png" />
+    <Content Include="font.png" />
+    <Content Include="mail image.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\email1.png" />
+    <None Include="Resources\turntable %281%29.png" />
+    <None Include="Resources\paperclip.png" />
+    <Content Include="turntable %281%29.png" />
+    <Content Include="איזה כיף שאתה לקוח שלנו.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
